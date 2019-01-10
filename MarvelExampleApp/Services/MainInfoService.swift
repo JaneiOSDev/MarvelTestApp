@@ -22,8 +22,8 @@ class MainInfoService: BackendService {
     func getComics() -> Promise<[Comics]> {
         let ts = Date().timeIntervalSince1970
         
-        let pharameters = ["apikey": self.publicKey,
-                           "ts" : ts,
+        let pharameters = ["ts" : ts,
+                           "apikey": self.publicKey,
                            "hash" : self.hash(ts)] as [String : Any]
         
         return Promise { seal in
