@@ -48,7 +48,6 @@ class TableController: BaseViewController {
             return cell
         }
         return UITableViewCell()
-        //fatalError(#function + "cannot dequeue a cell for item of type \(String(describing: type(of: item))) in \(String(describing: self))")
     }
     
 }

@@ -12,14 +12,6 @@ private let mainStoryboard = "Main"
 
 extension Router {
     
-//    func instantiateMainViewModule() {
-//
-//        let view = instantiateMainView()
-//
-//        let navigation = UINavigationController(rootViewController: view)
-//        self.view?.present(navigation, animated: true, completion: nil)
-//    }
-    
     static func instantiateMainView() -> UIViewController {
         
         let storyboard = UIStoryboard(name: mainStoryboard, bundle: nil)

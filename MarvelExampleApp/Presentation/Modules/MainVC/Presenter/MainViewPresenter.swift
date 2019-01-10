@@ -35,7 +35,7 @@ final class MainViewPresenter: BasePresenter<MainViewController> {
     private func configureView() {
         
         let viewModels = fields.map({ field -> MainInfoComicsModel in
-            return MainInfoComicsModel(name: field.title ?? "", //TODO: ololo
+            return MainInfoComicsModel(name: field.title ?? "",
                                        selectionClosure: {
                                         self.handleSelection()
             })
